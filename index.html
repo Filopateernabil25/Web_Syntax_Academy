@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>www.SyntaxAcadimy.com</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="icon" href="imgs/logo.jpg" />
+  </head>
+  <style>
+    section {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.705),
+          rgba(0, 0, 0, 0.658)
+        ),
+        url(imgs/img1.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 80vh;
+    }
+
+    .navbar {
+      transition: top 0.3s;
+    }
+
+    .navbar.scrolled {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+
+  <body class="bg-light-subtle">
+    <!-- Navbar & Section -->
+
+    <section
+      class="col-lg-12 col-md-12 col-sm-12 mb-5 text-md-center text-sm-center"
+    >
+      <div
+        id="NavbarTransation"
+        class="navbar navbar-expand-lg justify-content-around p-4"
+        data-bs-theme="dark"
+      >
+        <div class="navbar-brand d-flex">
+          <h2 id="Text" class="text-warning ms-3">
+            <img
+              src="imgs/logo.jpg"
+              class="rounded-circle"
+              width="50px"
+              alt=""
+            />
+            Syntax <span class="text-light">Acadimc</span>
+          </h2>
+        </div>
+        <button
+          class="navbar-toggler bg-warning text-dark fw-bold"
+          id="Button3"
+          data-bs-target="#collapse"
+          data-bs-toggle="collapse"
+        >
+          :)
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-nav">
+          <div class="navbar-collapse collapse" id="collapse">
+            <a href="" class="nav-link active">Home</a>
+            <a href="#Courses" class="nav-link">Courses</a>
+            <a href="FAQ.html" target="_blank" class="nav-link">FAQ</a>
+            <a href="About.html" target="_blank" class="nav-link">About</a>
+            <a href="#ContactUs" class="nav-link">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <h2 id="Title" class="text-light fw-bold">
+        Your career begins with Syntax Academy
+        <span class="" id="Title2"> The best place to learn how to code.</span>
+        <p class="lead" id="welcomeMessage" style="display: none">
+          Welcome To Syntax Acadimy 😍!
+        </p>
+        <audio
+          id="clickSound1"
+          src="Sound/WhatsApp Audio 2025-01-19 at 22.25.42_47d8675b.waptt.opus"
+        ></audio>
+        <audio id="clickSound2" src="Sound/GoodLuke.opus"></audio>
+        <button class="btn btn-success" id="button1">Welcome</button>
+      </h2>
+    </section>
+
+    <!-- Main & Courses of Cards -->
+
+    <div class="container mt-5 mb-5" id="Courses">
+      <div class="row text-center">
+        <h3
+          id="border1"
+          class="d-flex justify-content-around text-black p-3 fw-bold mb-4"
+        >
+          Courses To Learn
+          <span class="text-success ms-5"
+            >New Courses <i class="fa-solid fa-clock"></i> Will be Added later
+            <i class="fa-solid fa-smile text-warning-emphasis"></i>
+          </span>
+        </h3>
+        <hr class="fw-bold mb-4" />
+      </div>
+      <div class="row g-4">
+        <!-- HTML -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card shadow border-0 p-2 card-hover">
+            <img
+              src="imgs/html.png"
+              height="268"
+              class="p-5 rounded-circle"
+              style="box-shadow: 6px 2px 5px 3px orange"
+              alt=""
+            />
+            <div class="card-body">
+              <h4 class="card-title fw-bold" id="Html">HTML</h4>
+              <p class="card-text text-center flex-column d-flex" id="p">
+                Learn the fundamentals of web development with HTML for
+                structure and CSS for styling.
+                <span class="fw-bold" style="color: red"
+                  >Learning Time : From One Week To Three Weeks</span
+                >
+              </p>
+              <button
+                class="subscribebtn"
+                id="subscribebtn"
+                data-bs-target="ContactUs"
+              >
+                Subscribe Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card shadow border-0 p-2 card-hover">
+            <img
+              src="imgs/tw.jpeg"
+              height="291"
+              class="p-5 rounded-circle"
+              style="box-shadow: 6px 2px 5px 3px rgb(11, 157, 255)"
+              alt=""
+            />
+            <div class="card-body">
+              <h4 class="card-title fw-bold" id="TailwindCSS">Tailwind CSS</h4>
+              <p class="card-text text-center d-flex flex-column">
+                Master utility-first CSS with Tailwind for rapid and responsive
+                web design.
+                <span class="fw-bold" style="color: red"
+                  >Learning Time : From One Week To Three Weeks</span
+                >
+              </p>
+              <button class="subscribebtn" id="subscribebtn">
+                Subscribe Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card shadow border-0 p-2 card-hover">
+            <img
+              src="imgs/js.jpeg"
+              height="290"
+              class="p-5 rounded-circle"
+              style="box-shadow: 6px 2px 5px 3px rgb(255, 230, 0)"
+              alt=""
+            />
+            <div class="card-body">
+              <h4 class="card-title fw-bold" id="JavaScript">JavaScript</h4>
+              <p class="card-text text-center d-flex flex-column">
+                Explore JavaScript to make your websites dynamic and
+                interactive.
+                <span class="fw-bold" style="color: red"
+                  >Learning Time : From One Week To Three Monthes</span
+                >
+              </p>
+              <button class="subscribebtn" id="subscribebtn">
+                Subscribe Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card shadow border-0 p-2 card-hover">
+            <img
+              src="imgs/py.png"
+              class="rounded-circle p-1"
+              height="301"
+              style="box-shadow: 6px 2px 5px 3px rgb(255, 0, 0)"
+              alt=""
+            />
+            <div class="card-body">
+              <h4 class="card-title fw-bold" id="Python">Python</h4>
+              <p class="card-text text-center d-flex flex-column mb-4">
+                Learn Python, one of the most versatile programming languages
+                for data, web
+                <span class="fw-bold" style="color: red"
+                  >Learning Time : From One Week To Tow Monthes</span
+                >
+              </p>
+              <button class="subscribebtn" id="subscribebtn">
+                Subscribe Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card shadow border-0 p-2 card-hover">
+            <img
+              src="imgs/bs.png"
+              height="300px"
+              style="box-shadow: 6px 2px 5px 3px rgb(129, 3, 255)"
+              class="p-5 rounded-circle"
+              alt=""
+            />
+            <div class="card-body">
+              <h4 class="card-title fw-bold" id="Bootstrap">Bootstrap</h4>
+              <p class="card-text text-center d-flex flex-column mb-4">
+                Get hands-on with Bootstrap to create responsive and
+                mobile-first websites.
+                <span class="fw-bold" style="color: red"
+                  >Learning Time : From One Week To Four Weeks</span
+                >
+              </p>
+              <button
+                class="subscribebtn"
+                id="subscribebtn"
+                data-bs-target="#ContactUs"
+              >
+                Subscribe Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card shadow border-0 p-2 card-hover">
+            <img
+              src="imgs/css.png"
+              height="275"
+              style="box-shadow: 5px 5px 5px 1px rgb(0, 17, 255)"
+              class="p-5 rounded-circle"
+              alt=""
+            />
+            <div class="card-body">
+              <h4 class="card-title fw-bold" id="CSS">CSS</h4>
+              <p class="card-text text-center mb-4 d-flex flex-column">
+                Master the art of styling websites using CSS for layouts,
+                animations, and responsive design.
+                <span class="fw-bold" style="color: red"
+                  >Learning Time : From One Week To 1 Month</span
+                >
+              </p>
+              <button class="subscribebtn" id="subscribebtn">
+                Subscribe Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Us  -->
+    <div class="container-fluid bg-primary-subtle p-4" id="ContactUs">
+      <div class="row text-center">
+        <h3 class="text-primary fw-bold">Contact Us</h3>
+        <h2 class="">If You Have Any Query, Please Feel Free Contact Us</h2>
+        <p class="text-dark-emphasis text-capitalize">
+          We’re here to help! Whether you have questions about our services,
+          need assistance with a project, or just want to say hello, feel free
+          to reach out. Fill out the form below or use the provided contact
+          details to get in touch with our team. Let’s create something
+          extraordinary together!
+        </p>
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xxl-3"></div>
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xxl-3">
+          <div class="d-flex">
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="form-control mb-3 me-2 border-dark"
+              id="studentName"
+            />
+            <input
+              type="text"
+              class="form-control mb-3 border-dark"
+              placeholder="Email"
+              id="email"
+            />
+          </div>
+          <input
+            type="text"
+            class="form-control mb-3 border-dark"
+            placeholder="Address"
+            id="address"
+          />
+          <input
+            type="number"
+            placeholder="Phone Number"
+            class="form-control mb-3 border-dark"
+            id="phone"
+          />
+          <input
+            type="text"
+            placeholder="Guardian Phone"
+            class="form-control mb-3 border-dark"
+            id="guardianPhone"
+          />
+          <button class="btn btn-primary w-100" onclick="generatePDF()">
+            Download Your PDF File
+          </button>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xxl-3"></div>
+      </div>
+    </div>
+
+    <!-- Team -->
+    <div
+      class="container-fluid bg-secondary-subtle text-start text-light p-4 time-container"
+    >
+      <div class="container">
+        <h2 class="text-center mb-5 p-3 text-black">
+          Team Work <span class="text-danger" id="italic">Syntax Academy</span>
+        </h2>
+        <div class="row">
+          <div class="col-lg-3 mb-4 col-md-6 text-md-center col-sm-8 col-xxl-3">
+            <div class="card border-2 border-primary">
+              <img src="imgs/nobackground1.jpg" width="214" alt="" />
+              <div class="card-body bg-primary text-light p-3">
+                <h4 class="fw-bold">Omar Ashraf</h4>
+                <p>Web Developer & Full Stake</p>
+                <p>Phone : 01012329975</p>
+              </div>
+            </div>
+          </div>
+          <div class="mb-4 col-lg-3 col-md-6 text-md-center col-sm-8 col-xxl-3">
+            <div class="card border-2 border-primary">
+              <img
+                src="imgs/WhatsApp Image 2025-01-18 at 21.11.21_57cdeefb.jpg"
+                width="211"
+                alt=""
+              />
+              <div class="card-body text-light bg-primary p-3">
+                <h4 class="fw-bold">Omar Ahmed</h4>
+                <p>Web Developer</p>
+                <p>Phone : 01029424145</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-8 text-md-center col-xxl-3 mb-4">
+            <div class="card border-2 border-primary">
+              <img
+                src="imgs/WhatsApp Image 2025-01-18 at 21.16.25_93e8758c.jpg"
+                width="204"
+                alt=""
+              />
+              <div class="card-body text-light bg-primary p-3">
+                <h4 class="fw-bold">Mohamed Ashraf</h4>
+                <p>Web Developer</p>
+                <p>Phone : 01206923817</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-8 text-md-center col-xxl-3">
+            <div class="card border-2 border-primary">
+              <img src="imgs/filo.jpg" width="199.9px" alt="" />
+              <div class="card-body text-light bg-primary p-3">
+                <h4 class="fw-bold">Filopateer Nabil</h4>
+                <p>Web Developer</p>
+                <p>Phone : 01270668295</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid p-3 bg-primary text-light text-center">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xxl-12">
+          <i
+            class="fa-brands fa-facebook display-5 text-light ps-5 align-items-center"
+            id="linkFace"
+            ><a
+              href="https://www.facebook.com/share/p/19fcwYKTQT/"
+              class="ms-2 text-decoration-none text-white"
+              target="_blank"
+              >www.SyntaxAcademy.com</a
+            ></i
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Back To Top -->
+    <button class="btn btn-dark" id="button2">
+      <i class="fa-solid fa-arrow-alt-circle-up text-light"></i>
+    </button>
+
+    <script src="https://unpkg.com/jspdf-invoice-template@1.4.0/dist/index.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

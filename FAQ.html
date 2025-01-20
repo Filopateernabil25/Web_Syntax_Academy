@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>www.SyntaxAcadimyFeedback.com</title>
+  <link rel="icon" href="imgs/logo.jpg">
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css">
+</head>
+<style>
+  #button2 {
+    display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 5px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 13px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(hsl(0, 0%, 0%), rgb(0, 0, 0));
+    border-radius: 100px;
+  }
+
+  ::-webkit-scrollbar-button {
+    height: 10px;
+    border: blue;
+    border-radius: 20%;
+    background: linear-gradient(to top, rgb(255, 255, 255), rgb(255, 255, 255));
+  }
+
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.658)), url(imgs/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
+    height: 100%;
+  }
+</style>
+
+<body class="text-light">
+  <div class="container mt-5">
+    <h1 class="text-center" id="main-title">Students <span class="text-danger">Feedback</span></h1>
+    <button type="button" class="btn btn-primary mb-4" id="translate-button">Translate</button>
+    <form id="survey-form">
+      <div class="mb-3">
+        <label for="level" class="form-label" data-en="1. What is your current programming level?"
+          data-ar="١. ما هو مستوى البرمجة الحالي لديك؟">1. What is your current programming level?</label>
+        <select id="level" class="form-select">
+          <option value="Beginner" data-en="Beginner" data-ar="مبتدئ">Beginner</option>
+          <option value="Intermediate" data-en="Intermediate" data-ar="متوسط">Intermediate</option>
+          <option value="Advanced" data-en="Advanced" data-ar="متقدم">Advanced</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="languages" class="form-label"
+          data-en="2. Which programming languages do you prefer or want to learn?"
+          data-ar="٢. ما هي لغات البرمجة التي تفضلها أو ترغب في تعلمها؟">2. Which programming languages do you prefer or
+          want to learn?</label>
+        <input type="text" id="languages" class="form-control" placeholder="e.g., Python, JavaScript">
+      </div>
+
+      <div class="mb-3">
+        <label for="interests" class="form-label"
+          data-en="3. What are the programming fields you are most interested in?"
+          data-ar="٣. ما هي مجالات البرمجة التي تثير اهتمامك أكثر؟">3. What are the programming fields you are most
+          interested in?</label>
+        <select id="interests" class="form-select" multiple>
+          <option value="Web Development" data-en="Web Development" data-ar="تطوير الويب">Web Development</option>
+          <option value="Mobile Apps" data-en="Mobile Apps" data-ar="تطبيقات الجوال">Mobile Apps</option>
+          <option value="AI" data-en="Artificial Intelligence" data-ar="الذكاء الاصطناعي">Artificial Intelligence
+          </option>
+          <option value="Data Science" data-en="Data Science" data-ar="علم البيانات">Data Science</option>
+          <option value="Cybersecurity" data-en="Cybersecurity" data-ar="الأمن السيبراني">Cybersecurity</option>
+          <option value="Embedded Systems" data-en="Embedded Systems" data-ar="الأنظمة المدمجة">Embedded Systems
+          </option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label" data-en="4. Have you heard about our academy before?"
+          data-ar="٤. هل سمعت عن الأكاديمية الخاصة بنا من قبل؟">4. Have you heard about our academy before?</label>
+        <div>
+          <input type="radio" id="heard-yes" name="heard" value="Yes">
+          <label for="heard-yes" data-en="Yes" data-ar="نعم">Yes</label>
+        </div>
+        <div>
+          <input type="radio" id="heard-no" name="heard" value="No">
+          <label for="heard-no" data-en="No" data-ar="لا">No</label>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="preferences" class="form-label"
+          data-en="5. What factors influence your decision to join a programming course?"
+          data-ar="٥. ما هي العوامل التي تؤثر على قرارك بالانضمام إلى دورة برمجة؟">5. What factors influence your
+          decision to
+          join a programming course?</label>
+        <select id="preferences" class="form-select" multiple>
+          <option value="Price" data-en="Price" data-ar="السعر">Price</option>
+          <option value="Content Quality" data-en="Content Quality" data-ar="جودة المحتوى">Content Quality</option>
+          <option value="Flexible Timing" data-en="Flexible Timing" data-ar="جدول مرن">Flexible Timing</option>
+          <option value="Certified Courses" data-en="Certified Courses" data-ar="دورات معتمدة">Certified Courses
+          </option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label" data-en="6. What teaching method do you prefer?"
+          data-ar="٦. ما هي طريقة التدريس التي تفضلها؟">6. What teaching method do you prefer?</label>
+        <div>
+          <input type="checkbox" id="method-videos" value="Videos">
+          <label for="method-videos" data-en="Video Tutorials" data-ar="دروس الفيديو">Video Tutorials</label>
+        </div>
+        <div>
+          <input type="checkbox" id="method-live" value="Live Sessions">
+          <label for="method-live" data-en="Live Sessions with Instructor" data-ar="جلسات مباشرة مع المدرب">Live
+            Sessions with Instructor</label>
+        </div>
+        <div>
+          <input type="checkbox" id="method-projects" value="Projects">
+          <label for="method-projects" data-en="Project-Based Learning" data-ar="تعلم قائم على المشاريع">Project-Based
+            Learning</label>
+        </div>
+        <div>
+          <input type="checkbox" id="method-written" value="Written Materials">
+          <label for="method-written" data-en="Written Materials and Exercises" data-ar="مواد مكتوبة وتمارين">Written
+            Materials and Exercises</label>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="expectations" class="form-label" data-en="7. What are your expectations from a programming course?"
+          data-ar="٧. ما هي توقعاتك من دورة البرمجة؟">7. What are your expectations from a programming course?</label>
+        <input type="text" id="expectations" class="form-control"
+          placeholder="e.g., Learn basics, Prepare for job market">
+      </div>
+
+      <button type="button" class="btn btn-success mb-4" id="save-button">Save Responses</button>
+    </form>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+  <script>
+    const translateButton = document.getElementById('translate-button');
+    let isTranslated = false;
+
+    translateButton.addEventListener('click', () => {
+      const translatables = document.querySelectorAll('[data-en]');
+      translatables.forEach(element => {
+        element.textContent = isTranslated ? element.getAttribute('data-en') : element.getAttribute('data-ar');
+      });
+
+      translateButton.textContent = isTranslated ? 'Translate' : 'ترجمة';
+      isTranslated = !isTranslated;
+    });
+
+    document.getElementById('save-button').addEventListener('click', function () {
+      const responses = {
+        level: document.getElementById('level').value,
+        languages: document.getElementById('languages').value,
+        interests: Array.from(document.getElementById('interests').selectedOptions).map(option => option.value),
+        heard: document.querySelector('input[name="heard"]:checked')?.value,
+        preferences: Array.from(document.getElementById('preferences').selectedOptions).map(option => option.value),
+        methods: Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(checkbox => checkbox.value),
+        expectations: document.getElementById('expectations').value
+      };
+
+      localStorage.setItem('surveyResponses', JSON.stringify(responses));
+      alert('Your responses have been saved!');
+    });
+  </script>
+</body>
+
+</html>

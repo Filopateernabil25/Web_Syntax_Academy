@@ -1,0 +1,168 @@
+#Button3 {
+  width: 75px;
+}
+
+.card-hover {
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  background-color: #fff;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  background-color: rgba(0, 0, 0, 0.945);
+  box-shadow: 5px 5px 15px 3px orange;
+}
+
+.card-title {
+  transition: color 0.3s ease;
+}
+
+.card-hover:hover .card-title {
+  color: orange;
+}
+
+.card-text {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+#border1 {
+  color: orange;
+}
+
+.container hr {
+  color: rgb(0, 0, 0);
+  border: solid 2px;
+}
+
+.card-hover:hover .card-text {
+  color: rgb(255, 255, 255);
+}
+
+.subscribebtn {
+  display: none;
+  position: absolute;
+  top: 92.5%;
+  left: 51%;
+  width: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(216, 158, 0);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 6px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card-hover:hover .subscribebtn {
+  display: block;
+  opacity: 1;
+  transform: translateX(-50%);
+}
+
+.card-body {
+  transition: opacity 0.3s ease;
+}
+
+.card-hover:hover .card-body {
+  opacity: 0.9;
+}
+
+#button2 {
+  display: none;
+  position: fixed;
+  right: 10px;
+  bottom: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(hsl(207, 100%, 51%), rgb(45, 94, 255));
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-button {
+  height: 10px;
+  border: blue;
+  border-radius: 20%;
+  background: linear-gradient(to top, rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#Title {
+  font-size: 60px;
+  display: flex;
+  flex-direction: column;
+  line-height: 80px;
+  justify-content: center;
+  height: 70vh;
+  align-items: center;
+}
+
+#Title2 {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 10px;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff6600;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.time-container {
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+}
+
+.time-display {
+  color: #1f1e1e;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+#italic {
+  font-style: italic;
+}
+
+#linkFace {
+  font-size: 15px;
+  margin-left: -50px;
+}
